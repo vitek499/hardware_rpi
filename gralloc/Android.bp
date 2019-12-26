@@ -3,7 +3,7 @@ cc_library_shared {
     relative_install_path: "hw",
     proprietary: true,
     srcs: ["gralloc_rpi.cpp", "gralloc_fb.cpp"],
-    cflags: ["Wno-c++11-narrowing -ferror-limit=100"],
+    cflags: ["Wno-c++11-narrowing", "-ferror-limit=100"],
      include_dirs: [
         "external/drm_gralloc",
         "external/libdrm",
